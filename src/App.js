@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './Component/About';
+import NavBar from './Component/NavBar';
+/* import TextBlock from './Component/TextBlock'; */
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <NavBar titel="MenuBar" about="About"/>
+      {/* <NavBar/> */}
+      {/* <TextBlock heading='Text area:' Text='Enter the text' clearText='Clear'/> */}
+
+      <About/>
+    
+    </>
   );
 }
+
+
+
 
 export default App;
